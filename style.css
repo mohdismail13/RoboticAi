@@ -1,0 +1,190 @@
+/* Background styling for the header without an image */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(44, 44, 49, 0.3); /* Optional: add a solid or semi-transparent background color */
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    background-blend-mode: color;
+    backdrop-filter: blur(50px);
+    z-index: 1;
+}
+
+/* Logo Container */
+.logo h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.logo img {
+    width: 100px; /* Adjust logo size as needed */
+    height: auto;
+    margin-right: 15px;
+    border-radius: 50px;
+}
+
+/* Navbar Styling */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+}
+.navbar a:hover{
+    background-image: linear-gradient(to bottom right, rgb(151, 10, 10), rgb(5, 143, 202),rgb(46, 185, 7));
+}
+/* Header Search Cart */
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart input {
+    padding: 7px;
+    margin-right: 10px;
+    border-radius:5px ;
+}
+.cart-button {
+padding: 7px;
+border-radius: 5px;
+background-color: rgb(255, 238, 0);
+}
+.cart-button:hover{
+    color: white;
+    /* animation */
+    animation: rotate 4s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(40deg);
+    }
+    25%{
+        transform: rotate(-40deg);
+    }
+    50%{
+        transform: rotate(40deg);
+    }
+    75%{
+        transform: rotate(-40deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
+
+    
+
+
+/* Gallery Styling */
+.gallery {
+    padding: 190px 20px;
+    text-align: center;
+    background-image: url(./Images/bgimage.png);
+    width: 100%;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: #0f0f0f;
+}
+
+.gallery-description {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.email{
+    text-decoration: none;
+    color: aliceblue;
+}
+.footer-logo img{
+    width: 50px; /* Adjust logo size as needed */
+    height: auto;
+    margin-right: 15px;
+    border-radius: 50px;
+
+}
+.footer-logo, .footer-posts, .footer-socials, .footer-twitter {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-logo p, .footer-posts ul, .footer-socials div, .footer-twitter p {
+    margin: 5px 0;
+}
+.footer-gallery img{
+    
+        width: 60px;
+        height: 60px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+    
+}
+
+/* Scroll-to-top button styling */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 100px;
+    /* display: none; */
+    background-color: #e6ff08;
+    color: #080808;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #ff0000;
+}
+#copyright{
+    text-align: center;
+
+}
